@@ -37,6 +37,20 @@ function showSong(track){
 	console.log(track.name);
 	console.log(track.preview_url);
 	console.log(track.album.name);
+	appendLog(track.artists[0].name);
+	appendLog(track.name);
+	appendLog(track.preview_url);
+	appendLog(track.album.name);
+}
+
+function appendLog(data){
+	fs.appendFile('log.txt', data + '\n', function(err){
+		if (err){
+			console.log(err);
+		}else{
+			console.log("Log Updated");
+		}
+	})
 }
 
 function grabTweets(){
@@ -55,9 +69,10 @@ function grabTweets(){
 		  	if (!error) {
 		    	for (i=0; i<tweets.length; i++){
 		    		console.log(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
+		    		appendLog(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
 		    	}
-		  		}else {
-		  			console.log("Error!");
+		  	}else{
+		  		console.log("Error!");
 		  		}
 			});
 }
@@ -77,7 +92,6 @@ function grabSong(){
 	    		}
 	    	}
 		 	spotify.search({ type: 'track', query: "The Sign" }, function(err, data) {
-		    		
 		    		if ( err ) {
 		        		console.log('Error occurred: ' + err);
 		        		return;
@@ -112,6 +126,7 @@ function grabMovie(){
 	    		console.log("Actors: " + body.Actors);
 	    		console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
 	    		console.log("Rotten Tomatoes URL: " + body.tomatoURL);
+	    		appendLog(body);
 	    		return; 
 	  		}else{
 	  			console.log(error);
