@@ -88,29 +88,37 @@ spotify.search({ type: 'track', query: userSearch }, function(err, data) {
 }
 
 function grabMovie(){
-var queryURL = ('http://www.omdbapi.com/?t=' + userSearch + '&y=&plot=short&r=json&tomatoes=true');
+	var queryURL = ('http://www.omdbapi.com/?t=' + userSearch + '&y=&plot=short&r=json&tomatoes=true');
 
-var options = {
-	uri: queryURL,
-	json: true
-};
-	request(options, function (error, response, body) {
-  		if (!error && response.statusCode == 200) {
-  			console.log("Title: " + body.Title);
-    		console.log("Year: " + body.Year);
-    		console.log("IMDB Rating: " + body.imdbRating);
-    		console.log("Country: " + body.Country);
-    		console.log("Plot: " + body.Plot);
-    		console.log("Actors: " + body.Actors);
-    		console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
-    		console.log("Rotten Tomatoes URL: " + body.tomatoURL);
-    		return; 
-  		}else{
-  			console.log(error);
-  		}
-	});
+	var params = {
+		uri: queryURL,
+		json: true
+	};
+		request(params, function (error, response, body) {
+	  		if (!error && response.statusCode == 200) {
+	  			console.log("Title: " + body.Title);
+	    		console.log("Year: " + body.Year);
+	    		console.log("IMDB Rating: " + body.imdbRating);
+	    		console.log("Country: " + body.Country);
+	    		console.log("Plot: " + body.Plot);
+	    		console.log("Actors: " + body.Actors);
+	    		console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
+	    		console.log("Rotten Tomatoes URL: " + body.tomatoURL);
+	    		return; 
+	  		}else{
+	  			console.log(error);
+	  		}
+		});
 }
 
 function grabLIRI(){
-	console.log("LIRI!");
+	fs.readFile('random.txt', 'utf8', function(error,data){
+		
+		var defaultData = data.split(',');
+
+			for(i=2; i<inputString.length; i++){
+				console.log(defaultData[i]);
+			}
+		return;
+	});
 }
