@@ -1,9 +1,9 @@
 var apiKeys = require('./keys.js');
-
 var request = require('request');
 var Twitter = require('twitter');
 var spotify = require('spotify');
 var fs = require('fs');
+
 
 var inputString = process.argv;
 
@@ -24,8 +24,17 @@ switch (userInput){
 	case "do-what-it-says":
 		grabLIRI();
 		break;
+	case "LIRI-test":
+		liriTest();
+		break;
 	default: console.log("Sorry not a command!");
+}
 
+function showSong(){
+	console.log(track.artists[0].name);
+	console.log(track.name);
+	console.log(track.preview_url);
+	console.log(track.album.name);
 }
 
 function grabTweets(){
@@ -38,7 +47,9 @@ var params = {
 	screen_name: 'Wintermute1',
 	count: 20
 	};
+
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
+  	
   	if (!error) {
     	for (i=0; i<tweets.length; i++){
     		console.log(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
@@ -51,40 +62,35 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
 
 function grabSong(){
 
-spotify.search({ type: 'track', query: userSearch }, function(err, data) {
-    if ( err ) {
-        console.log('Error occurred: ' + err);
-        return;
-    }else{
-    	for(i=0; i<data.tracks.items.length; i++){
-    		var track = data.tracks.items[i];
-    		if (track.name.toLowerCase() === userSearch.toLowerCase()){
-    			console.log(track.artists[0].name);
-    			console.log(track.name);
-    			console.log(track.preview_url);
-    			console.log(track.album.name);
-    			return;
-    		}
-    	}
-	 	spotify.search({ type: 'track', query: "The Sign" }, function(err, data) {
-	    		if ( err ) {
-	        		console.log('Error occurred: ' + err);
-	        		return;
-	    		}else{
-	    			for(i=0; i<data.tracks.items.length; i++){
-	    				var track = data.tracks.items[i];
-						if (track.name.toLowerCase() === "The Sign".toLowerCase()){
-							console.log(track.artists[0].name);
-							console.log(track.name);
-							console.log(track.preview_url);
-							console.log(track.album.name);
-							return;
-						}
-	    			}
+	spotify.search({ type: 'track', query: userSearch }, function(err, data) {
+	    if ( err ) {
+	        console.log('Error occurred: ' + err);
+	        return;
+	    	}else{
+	    	for(i=0; i<data.tracks.items.length; i++){
+	    		var track = data.tracks.items[i];
+	    		if (track.name.toLowerCase() === userSearch.toLowerCase()){
+	    			showSong();
+	    			return;
 	    		}
-	    });
-	}
-});
+	    	}
+		 	spotify.search({ type: 'track', query: "The Sign" }, function(err, data) {
+		    		
+		    		if ( err ) {
+		        		console.log('Error occurred: ' + err);
+		        		return;
+		    		}else{
+		    			for(i=0; i<data.tracks.items.length; i++){
+		    				var track = data.tracks.items[i];
+							if (track.name.toLowerCase() === "The Sign".toLowerCase()){
+								showSong();
+								return;
+							}
+		    			}
+		    		}
+		    });
+		}
+	});
 }
 
 function grabMovie(){
@@ -116,9 +122,11 @@ function grabLIRI(){
 		
 		var defaultData = data.split(',');
 
-			for(i=2; i<inputString.length; i++){
-				console.log(defaultData[i]);
-			}
+		console.log(defaultData);
+
+		userInput = defaultData[0];
+		userSearch = defaultData[1];
+		
 		return;
 	});
 }
