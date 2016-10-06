@@ -10,27 +10,29 @@ var inputString = process.argv;
 var userInput = inputString[2];
 var userSearch = inputString[3];
 
+function userCommand(userInput, userSearch){
 
-switch (userInput){
-	case "my-tweets":
-		grabTweets();
-		break;
-	case "spotify-this-song":
-		grabSong();
-		break;
-	case "movie-this":
-		grabMovie();
-		break;
-	case "do-what-it-says":
-		grabLIRI();
-		break;
-	case "LIRI-test":
-		liriTest();
-		break;
-	default: console.log("Sorry not a command!");
+	switch (userInput){
+		case "my-tweets":
+			grabTweets();
+			break;
+		case "spotify-this-song":
+			grabSong();
+			break;
+		case "movie-this":
+			grabMovie();
+			break;
+		case "do-what-it-says":
+			grabLIRI();
+			break;
+		case "LIRI-test":
+			liriTest();
+			break;
+		default: console.log("Sorry not a command!");
+	}
 }
 
-function showSong(){
+function showSong(track){
 	console.log(track.artists[0].name);
 	console.log(track.name);
 	console.log(track.preview_url);
@@ -39,25 +41,25 @@ function showSong(){
 
 function grabTweets(){
 
-var client = new Twitter(
-	apiKeys.twitterKeys
-);
+	var client = new Twitter(
+		apiKeys.twitterKeys
+	);
 
-var params = {
-	screen_name: 'Wintermute1',
-	count: 20
+	var params = {
+		screen_name: 'Wintermute1',
+		count: 20
 	};
 
-client.get('statuses/user_timeline', params, function(error, tweets, response) {
-  	
-  	if (!error) {
-    	for (i=0; i<tweets.length; i++){
-    		console.log(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
-    	}
-  		}else {
-  			console.log("Error!");
-  		}
-	});
+		client.get('statuses/user_timeline', params, function(error, tweets, response) {
+		  	
+		  	if (!error) {
+		    	for (i=0; i<tweets.length; i++){
+		    		console.log(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
+		    	}
+		  		}else {
+		  			console.log("Error!");
+		  		}
+			});
 }
 
 function grabSong(){
@@ -70,7 +72,7 @@ function grabSong(){
 	    	for(i=0; i<data.tracks.items.length; i++){
 	    		var track = data.tracks.items[i];
 	    		if (track.name.toLowerCase() === userSearch.toLowerCase()){
-	    			showSong();
+	    			showSong(track);
 	    			return;
 	    		}
 	    	}
@@ -83,7 +85,7 @@ function grabSong(){
 		    			for(i=0; i<data.tracks.items.length; i++){
 		    				var track = data.tracks.items[i];
 							if (track.name.toLowerCase() === "The Sign".toLowerCase()){
-								showSong();
+								showSong(track);
 								return;
 							}
 		    			}
@@ -118,6 +120,7 @@ function grabMovie(){
 }
 
 function grabLIRI(){
+	
 	fs.readFile('random.txt', 'utf8', function(error,data){
 		
 		var defaultData = data.split(',');
@@ -126,7 +129,14 @@ function grabLIRI(){
 
 		userInput = defaultData[0];
 		userSearch = defaultData[1];
+
+		console.log(userInput);
+		console.log(userSearch);
+
+		userCommand(userInput, userSearch);
 		
 		return;
 	});
 }
+
+userCommand(userInput, userSearch);
