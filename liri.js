@@ -83,8 +83,8 @@ function grabTweets(){
 		    				tweetTime: tweets[i].created_at
 		    		}
 		    		var twitterArray = [];
-		    		twitterArray.push(twitterLog);
-		    		appendLog(JSON.stringify(twitterArray));
+		    		twitterArray.push({twitterLog});
+		    		appendLog(JSON.stringify(twitterArray[i]));
 		    		console.log(twitterArray.length);
 		    		return;
 		    	}

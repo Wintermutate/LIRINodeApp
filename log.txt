@@ -28,3 +28,8 @@ https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
 [object Object]
 [object Object]
 [{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}]
+{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}
+undefined
+undefined
+{"twitterLog":0}
+{"twitterLog":{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}}
