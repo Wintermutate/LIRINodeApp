@@ -37,10 +37,17 @@ function showSong(track){
 	console.log(track.name);
 	console.log(track.preview_url);
 	console.log(track.album.name);
-	appendLog(track.artists[0].name);
-	appendLog(track.name);
-	appendLog(track.preview_url);
-	appendLog(track.album.name);
+	// appendLog(track.artists[0].name);
+	// appendLog(track.name);
+	// appendLog(track.preview_url);
+	// appendLog(track.album.name);
+	var songLog ={
+		Artist: track.artists[0].name,
+		Name: track.name,
+		PreviewURL: track.preview_url,
+		Album: track.album.name
+	}
+	appendLog(JSON.stringify(songLog));
 }
 
 function appendLog(data){
@@ -69,10 +76,20 @@ function grabTweets(){
 		  	if (!error) {
 		    	for (i=0; i<tweets.length; i++){
 		    		console.log(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
-		    		appendLog(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
+		    		// appendLog(i + " " + tweets[i].text + " Time Created: " + tweets[i].created_at);
+		    		var twitterLog ={
+		    				tweetNumber: i,
+		    				tweetText: tweets[i].text,
+		    				tweetTime: tweets[i].created_at
+		    		}
+		    		var twitterArray = [];
+		    		twitterArray.push(twitterLog);
+		    		appendLog(JSON.stringify(twitterArray));
+		    		console.log(twitterArray.length);
+		    		return;
 		    	}
 		  	}else{
-		  		console.log("Error!");
+		  		return console.log("Error!");
 		  		}
 			});
 }
