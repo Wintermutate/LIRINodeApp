@@ -33,3 +33,63 @@ undefined
 undefined
 {"twitterLog":0}
 {"twitterLog":{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}}
+{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+[{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}]
+[{"tweetNumber":1,"tweetText":"We got featured on the Adobe blog!!!! https://t.co/B2Yl2J0zvw","tweetTime":"Wed Oct 05 16:58:30 +0000 2016"}]
+[{"tweetNumber":2,"tweetText":"Climbing Kilimanjaro for Multiple Myeloma Research Inspired More Than Just Donations\nhttps://t.co/V9Yc6T1NV2\n\n#CureCancer","tweetTime":"Fri Feb 12 22:10:29 +0000 2016"}]
+[{"tweetNumber":4,"tweetText":"RT @ActuallyNPH: Hey, I know that dude! @TheAcademy http://t.co/f3t9ooOMhM","tweetTime":"Mon Feb 23 00:05:18 +0000 2015"}]
+[{"tweetNumber":3,"tweetText":"So if I'm a liar an you're a thief then at least we know where the other one sleeps. #emo #brandnew #Moody","tweetTime":"Tue Feb 24 19:02:51 +0000 2015"}]
+[{"tweetNumber":7,"tweetText":"The world we exist in denies us the right to live happily. We are continually spoken for by voices not our own. #truth #youthcode","tweetTime":"Fri Feb 06 17:07:38 +0000 2015"}]
+[{"tweetNumber":5,"tweetText":"\"I hope people bring drums to the vernal equinox.\" #hippies #shitmygfsays","tweetTime":"Sun Feb 22 22:42:12 +0000 2015"}]
+[{"tweetNumber":8,"tweetText":"@benjamenwalker I just finished listening to all of the available podcast. Completely changed the way I view the world. THANK YOU","tweetTime":"Mon Dec 01 21:19:13 +0000 2014"}]
+[{"tweetNumber":10,"tweetText":"Easy tinder profile: Likes: Ghouls Dislikes: Peoples Knees. Cover those knees up if you're going to walk around. #tinder #charliekelly","tweetTime":"Wed Nov 12 04:50:45 +0000 2014"}]
+[{"tweetNumber":9,"tweetText":"@benjamenwalker","tweetTime":"Mon Dec 01 21:18:40 +0000 2014"}]
+[{"tweetNumber":6,"tweetText":"Modern looking very strong after changes to ban list. #PTFRF","tweetTime":"Sat Feb 07 19:35:37 +0000 2015"}]
+[{"tweetNumber":12,"tweetText":"If you read one thing on the internet this day FOR THE LOVE OF GOD LET IT BE THIS. http://t.co/okZ619wOj0","tweetTime":"Fri Jul 18 20:45:35 +0000 2014"}]
+[{"tweetNumber":11,"tweetText":"You get money fuckin wit me bruh. http://t.co/FSY1kfGS1n","tweetTime":"Sat Jul 19 06:12:35 +0000 2014"}]
+[{"tweetNumber":13,"tweetText":"Since when did it become ok to play hearthstone?","tweetTime":"Thu Jul 17 17:38:37 +0000 2014"}]
+[{"tweetNumber":14,"tweetText":"I wonder if somewhere out there right now there is a jewish rapper getting faded off a manischewitz double cup.","tweetTime":"Thu Jul 17 07:23:53 +0000 2014"}]
+[{"tweetNumber":15,"tweetText":"Woah http://t.co/3kwHnMV6nC","tweetTime":"Tue Jul 15 17:54:14 +0000 2014"}]
+[{"tweetNumber":16,"tweetText":"Everyday my withdrawal from Paxil redefines what misery means to me.","tweetTime":"Tue Jul 15 17:19:33 +0000 2014"}]
+[{"tweetNumber":17,"tweetText":"Justin Wong #EVO2014","tweetTime":"Mon Jul 14 01:40:29 +0000 2014"}]
+[{"tweetNumber":18,"tweetText":"My GF isn't home so I'm home alone watching scary movies and making curry.....what when so right?!","tweetTime":"Sat Jul 12 02:11:02 +0000 2014"}]
+[{"tweetNumber":19,"tweetText":"You wanna be Don Draper you just wake up one day and realize you're just The Dude.","tweetTime":"Fri Jul 11 22:56:36 +0000 2014"}]
+{"tweetNumber":0,"tweetText":"I have to start holding out for the second marshmallow.","tweetTime":"Thu Oct 06 06:40:38 +0000 2016"}
+{"tweetNumber":1,"tweetText":"We got featured on the Adobe blog!!!! https://t.co/B2Yl2J0zvw","tweetTime":"Wed Oct 05 16:58:30 +0000 2016"}
+{"tweetNumber":2,"tweetText":"Climbing Kilimanjaro for Multiple Myeloma Research Inspired More Than Just Donations\nhttps://t.co/V9Yc6T1NV2\n\n#CureCancer","tweetTime":"Fri Feb 12 22:10:29 +0000 2016"}
+{"tweetNumber":3,"tweetText":"So if I'm a liar an you're a thief then at least we know where the other one sleeps. #emo #brandnew #Moody","tweetTime":"Tue Feb 24 19:02:51 +0000 2015"}
+{"tweetNumber":4,"tweetText":"RT @ActuallyNPH: Hey, I know that dude! @TheAcademy http://t.co/f3t9ooOMhM","tweetTime":"Mon Feb 23 00:05:18 +0000 2015"}
+{"tweetNumber":5,"tweetText":"\"I hope people bring drums to the vernal equinox.\" #hippies #shitmygfsays","tweetTime":"Sun Feb 22 22:42:12 +0000 2015"}
+{"tweetNumber":8,"tweetText":"@benjamenwalker I just finished listening to all of the available podcast. Completely changed the way I view the world. THANK YOU","tweetTime":"Mon Dec 01 21:19:13 +0000 2014"}
+{"tweetNumber":7,"tweetText":"The world we exist in denies us the right to live happily. We are continually spoken for by voices not our own. #truth #youthcode","tweetTime":"Fri Feb 06 17:07:38 +0000 2015"}
+{"tweetNumber":6,"tweetText":"Modern looking very strong after changes to ban list. #PTFRF","tweetTime":"Sat Feb 07 19:35:37 +0000 2015"}
+{"tweetNumber":9,"tweetText":"@benjamenwalker","tweetTime":"Mon Dec 01 21:18:40 +0000 2014"}
+{"tweetNumber":10,"tweetText":"Easy tinder profile: Likes: Ghouls Dislikes: Peoples Knees. Cover those knees up if you're going to walk around. #tinder #charliekelly","tweetTime":"Wed Nov 12 04:50:45 +0000 2014"}
+{"tweetNumber":11,"tweetText":"You get money fuckin wit me bruh. http://t.co/FSY1kfGS1n","tweetTime":"Sat Jul 19 06:12:35 +0000 2014"}
+{"tweetNumber":12,"tweetText":"If you read one thing on the internet this day FOR THE LOVE OF GOD LET IT BE THIS. http://t.co/okZ619wOj0","tweetTime":"Fri Jul 18 20:45:35 +0000 2014"}
+{"tweetNumber":13,"tweetText":"Since when did it become ok to play hearthstone?","tweetTime":"Thu Jul 17 17:38:37 +0000 2014"}
+{"tweetNumber":14,"tweetText":"I wonder if somewhere out there right now there is a jewish rapper getting faded off a manischewitz double cup.","tweetTime":"Thu Jul 17 07:23:53 +0000 2014"}
+{"tweetNumber":15,"tweetText":"Woah http://t.co/3kwHnMV6nC","tweetTime":"Tue Jul 15 17:54:14 +0000 2014"}
+{"tweetNumber":16,"tweetText":"Everyday my withdrawal from Paxil redefines what misery means to me.","tweetTime":"Tue Jul 15 17:19:33 +0000 2014"}
+{"tweetNumber":17,"tweetText":"Justin Wong #EVO2014","tweetTime":"Mon Jul 14 01:40:29 +0000 2014"}
+{"tweetNumber":18,"tweetText":"My GF isn't home so I'm home alone watching scary movies and making curry.....what when so right?!","tweetTime":"Sat Jul 12 02:11:02 +0000 2014"}
+{"tweetNumber":19,"tweetText":"You wanna be Don Draper you just wake up one day and realize you're just The Dude.","tweetTime":"Fri Jul 11 22:56:36 +0000 2014"}

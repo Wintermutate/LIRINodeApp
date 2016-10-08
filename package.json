@@ -1,8 +1,8 @@
 {
-  "name": "testapp",
+  "name": "LIRInodeapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "LIRI app for homework.",
+  "main": "liri.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
